@@ -6,9 +6,11 @@ import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './i18n';
 
-import send from 'utils/GenerateLink';
+import getTwitchData from 'utils/GenerateLink';
 
-send();
+getTwitchData("kevtvstreamt").then(res => {
+  console.log(res);
+})
 
 ReactDOM.render(
   <React.StrictMode>

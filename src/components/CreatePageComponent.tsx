@@ -3,7 +3,6 @@ import { Form, Button } from 'react-bootstrap';
 
 const CreatePageComponent = () => {
     const { t } = useTranslation();
-
     return (
         <Form>
             <Form.Group controlId="formBasicEmail">
